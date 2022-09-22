@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+*,section
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: -100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+h1
+{
+    
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+p
+{
+    color: hsl(224, 23%, 55%);
+}
+
+main
+{
+    margin: 0 auto;
+}
+
+.card
+{   
+    margin: 2rem auto;
+    max-width: 28rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.description
+{
+    padding: 10%;
+}
+
+
+.text-content p
+{
+    margin: 1.5rem 0;
+}
+
+
+.plan
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem 0;
+    border-radius: 0.75rem;
+}
+.middle
+{   
+    display: inline-block;
+    margin-left:  1rem;
+}
+
+button
+{
+    width: 100%;
+    padding: 0.75rem 0;
+    background-color:  hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 0.75rem;
+    color: hsl(225, 100%, 98%);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+.plan a
+{
+    font-weight: 700;
+}
+
+button:hover
+{
+    opacity: 0.6;
+    transition:background-color 0.3s ease ;
+}
+
+a:hover
+{
+    opacity: 0.6;
+    text-decoration: none;
+    transition:color 0.3s ease ;
+}
+
+a.cancel
+{
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a.cancel:hover
+{
+    color: hsl(223, 47%, 23%);
+    transition:color 0.3s ease ;
+}
+
+
+@media (max-width:425px)
+{
+    body
+    {
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 0.75rem;
+    }
+    .card
+    {
+        width: 85%;
+        margin: 2rem auto;
+    }
+}
